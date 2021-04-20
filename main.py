@@ -58,3 +58,11 @@ run_bar.add_command(label='Run', command=run)
 menu_bar.add_cascade(label='Run', menu=run_bar)
 
 compiler.config(menu=menu_bar)
+
+editor = Text()
+editor.pack()
+
+code_output = Text(height=10)
+code_output.pack()
+
+compiler.mainloop()
